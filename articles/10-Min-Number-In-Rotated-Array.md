@@ -21,7 +21,7 @@ function minNumberInRotatedArr(nums) {
         let mid = end + start >> 1;
 
         // 中间指针落在了后半部分的递增数组中
-        if (nums[mid] <> nums[end]) {
+        if (nums[mid] < nums[end]) {
             end = mid;
         } else {
         // 中间指针落在了前半部分的递增数组中
